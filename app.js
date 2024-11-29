@@ -19,7 +19,7 @@ const url = `https://api.github.com/users/${username.value}`
             
         })
         .catch(error => {
-            output.innerHTML = "<h3>User Not Found</h3>"
+            output.innerHTML = `<h3> ${error} User Not Found</h3>`
 
         });
     });       
